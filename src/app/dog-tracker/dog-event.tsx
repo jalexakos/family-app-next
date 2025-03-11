@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import "./dog-event-card.css";
 
 interface DogEventComponentProps {
   time: number;
@@ -16,7 +17,7 @@ interface DogEventComponentProps {
 
 export const DogEvent: React.FC<DogEventComponentProps> = ({ time, name }) => {
   return (
-    <Card>
+    <Card className="box">
       <CardHeader>
         <CardTitle>Bea Event</CardTitle>
       </CardHeader>
